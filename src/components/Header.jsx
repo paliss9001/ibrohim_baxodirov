@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <header className="header container">
-      <a href="/" className="header__logo">
+      <a href="/ibrohim_baxodirov/" className="header__logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="48px"

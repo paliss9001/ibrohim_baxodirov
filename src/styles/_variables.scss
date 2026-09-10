@@ -1,0 +1,30 @@
+@use './helpers/' as *;
+
+:root {
+  /* Neutral Colors */
+  --neutral-900: #2E1401;
+  --neutral-600: #6D5840;
+  --neutral-100: #F7F3F0;
+  --neutral-0: #FFFFFF;
+
+  /* Accent Colors */
+  --yellow-500: #F9C848;
+  --blue-400: #92AEFB;
+  --blue-600: #4D73C7;
+  --teal-400: #71D9C6;
+  --pink-400: #FC8AE5;
+  --pink-500: #F073A3;
+  --pink-700: #E1176C;
+
+  --base-font: 'Poppins';
+
+  --container-width: #{rem(1440)};
+  --container-padding-x: #{rem(16)};
+
+  --border: 2px solid var(--neutral-900);
+  --box-shadow: 3px 3px 1px 1px var(--neutral-900);
+  --box-shadow-accent: 3px 3px 1px 1px var(--blue-600);
+  --box-shadow-alert: 3px 3px 1px 1px var(--pink-700);
+  --base-translate: translate(2px, 2px);
+  
+}

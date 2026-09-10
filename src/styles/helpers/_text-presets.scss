@@ -1,0 +1,100 @@
+@use 'functions' as *;
+
+// Text Preset 1 — Poppins, Bold
+@mixin preset-1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; // Bold
+  font-size: rem(40);
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+// Text Preset 1 (Tablet) — Poppins, Bold
+@mixin preset-1-tablet {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; // Bold
+  font-size: rem(32);
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+// Text Preset 1 (Mobile) — Poppins, Bold
+@mixin preset-1-mobile {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; // Bold
+  font-size: rem(24);
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+// Text Preset 2 — Poppins, SemiBold
+@mixin preset-2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; // SemiBold
+  font-size: rem(24);
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+// Text Preset 3 — Poppins, SemiBold
+@mixin preset-3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; // SemiBold
+  font-size: rem(20);
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+// Text Preset 4 (SemiBold) — Poppins, SemiBold
+@mixin preset-4-semibold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; // SemiBold
+  font-size: rem(18);
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+// Text Preset 4 (Medium) — Poppins, Medium
+@mixin preset-4-medium {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500; // Medium
+  font-size: rem(18);
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+// Text Preset 4 (Regular) — Poppins, Regular
+@mixin preset-4-regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; // Regular
+  font-size: rem(18);
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
+// Text Preset 5 — Poppins, Medium
+@mixin preset-5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500; // Medium
+  font-size: rem(14);
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
+// Text Preset 5 (Regular) — Poppins, Regular
+@mixin preset-5-regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; // Regular
+  font-size: rem(14);
+  line-height: 140%;
+  letter-spacing: 0;
+}
+
+// Text Preset 6 — Poppins, Medium
+@mixin preset-6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500; // Medium
+  font-size: rem(12);
+  line-height: 130%;
+  letter-spacing: -5%;
+}

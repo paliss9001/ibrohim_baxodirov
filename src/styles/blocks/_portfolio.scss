@@ -1,0 +1,95 @@
+@use '../helpers/' as *;
+
+.portfolio {
+  margin-top: rem(60);
+
+  &__list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+
+    @include tablet {
+      // grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    height: auto;
+    border-radius: 8px;
+    width: 100%;
+    transition-duration: .2s;
+    border: var(--border);
+    border-color: var(--teak-400);
+
+    @include hover {
+      scale: 1.009;
+
+    }
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+  }
+
+  &__item-header {
+    padding: rem(20);
+    border-bottom: var(--border);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-title {
+    @include preset-2;
+  }
+
+  &__project-count {
+    @include tile;
+    padding: .2rem .4rem;
+    background-color: var(--teal-400);
+
+    &::after {
+      content: "";
+      background-image: url('/assets/');
+    }
+  }
+
+  &__img-wrapper {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  &__item-btn {
+    align-self: center;
+  }
+
+  &__info {
+    padding: 1rem;
+    border-top: var(--border);
+  }
+
+  &__label {
+    @include preset-4-medium;
+  }
+
+  &__code {
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
+    margin-top: auto;
+  
+    a {
+      color: var(--neutral-900);
+      text-decoration: underline;
+    }
+  }
+}

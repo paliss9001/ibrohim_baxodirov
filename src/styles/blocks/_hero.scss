@@ -1,0 +1,49 @@
+@use '../helpers/' as *;
+
+.hero {
+  // margin-top: rem(20);
+  background-image: url('/assets/images/Pattern.png');
+
+  &__content {
+    display: flex;
+    // align-items: start;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  .Typewriter {
+
+    @include laptop-above {
+      min-height: rem(155);
+    }
+
+    @include laptop {
+      min-height: rem(100)
+    }
+  }
+
+  &__description {
+    @include preset-1;
+    font-weight: 400;
+
+    @include tablet-above {
+      width: 50ch;
+
+    }
+
+    @include laptop {
+      @include preset-2;
+      font-weight: 400;
+    }
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: start;
+  }
+
+}

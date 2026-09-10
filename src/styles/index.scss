@@ -1,0 +1,13 @@
+@use './fonts';
+@use './variables';
+@use './normalize';
+@use './utils';
+@use './globals';
+
+@use './blocks/header';
+@use './blocks/hero';
+@use './blocks/button';
+@use './blocks/skills';
+@use './blocks/portfolio';
+@use './blocks/footer';
+@use './blocks/burger-button';

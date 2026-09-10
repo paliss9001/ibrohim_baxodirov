@@ -1,0 +1,81 @@
+@use '../helpers/' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mobile {
+    padding-bottom: 1.5rem;
+  }
+
+  & svg * {
+    color: var(--neutral-300);
+  }
+
+  &__menu-list  {
+    display: flex;
+    column-gap: 2rem;
+  }
+
+  &__menu-link {
+    @include preset-5;
+    padding-block: 2rem;
+    cursor: pointer;
+    transition-duration: .2s;
+
+    &:hover {
+      color: var(--pink-500);
+    }
+  }
+
+  &__logo {
+    transition-duration: .2s;
+    color: var(--pink-500);
+
+    &:hover {
+      color: var(--pink-700);
+    }
+  }
+
+  &__burger-menu {
+    color: red;
+    transform: translateX(100%);
+    transition-duration: .2s;
+    position: fixed;
+    inset: 0;
+    &.active {
+      transform: translateX(50%);
+    }
+    background-color: var(--teal-400);
+    z-index: 10;
+  }
+
+  &__overlay {
+    z-index: 5;
+    transition-duration: .2s;
+    @include mobile-above {
+      display: contents; 
+    }
+
+    &.active {
+      position: fixed;
+      inset: 0;
+      background-color: black;
+      opacity: .5;
+    }
+  }
+
+  &__burger-menu-link {
+    padding-block: 1rem;
+    color: var(--pink-700);
+    font-weight: 600;
+    padding-inline: .4rem;
+  }
+
+  &__burger-item {
+    border-bottom: var(--border);
+  }
+
+
+}

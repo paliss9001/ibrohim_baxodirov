@@ -1,0 +1,19 @@
+@use '../helpers/' as *;
+
+.button {
+  @include preset-4-semibold;
+  box-shadow: var(--box-shadow);
+  border-radius: 999px;
+  background-color: var(--yellow-500);
+  padding: rem(12) rem(20);
+  border: var(--border);
+  transition-duration: .2s;
+
+  &:hover {
+    transform: var(--base-translate);
+  }
+
+  &:active {
+    box-shadow: var(--box-shadow-accent);
+  }
+}

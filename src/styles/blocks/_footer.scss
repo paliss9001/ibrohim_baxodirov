@@ -1,0 +1,57 @@
+@use "../helpers/" as *;
+
+.footer {
+  background-image: url("/assets/images/Pattern.png");
+
+  margin-top: 3rem;
+  background-color: var(--pink-400);
+  padding: 1rem;
+  display: flex;
+  border-top: var(--border);
+  padding-bottom: rem(120);
+
+  @include mobile {
+    flex-direction: column;
+    align-items: start;
+    row-gap: 2rem;
+  }
+
+  &__links-list {
+    display: flex;
+    @include tile;
+    background-color: var(--teal-400);
+    padding: 0;
+
+    img {
+      @include square(rem(24));
+      flex-shrink: 0;
+    }
+  }
+
+  &__links-item {
+    &:not(:last-child) {
+      border-right: var(--border);
+    }
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+
+    img {
+      transition-duration: 0.4s;
+    }
+
+    @include hover {
+      img {
+        scale: 1.2;
+      }
+    }
+  }
+
+  &__body {
+    p {
+      margin-top: auto;
+    }
+  }
+}
